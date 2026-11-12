@@ -1,0 +1,151 @@
+.register-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  background:
+    radial-gradient(circle at 85% 15%, #e7e3ff 0, transparent 25%),
+    #f7f8fc;
+  color: #171a2b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.register-card {
+  width: min(100%, 460px);
+  padding: 36px;
+  border: 1px solid #e8eaf2;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 18px 50px rgba(27, 32, 67, 0.09);
+}
+
+.register-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  color: #171a2b;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.register-logo-mark {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 12px;
+  background: #6558e8;
+  color: #fff;
+  font-family: monospace;
+}
+
+.register-card h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+.register-subtitle {
+  margin: 0 0 26px;
+  color: #70758a;
+  font-size: 15px;
+}
+
+.register-field {
+  margin-bottom: 17px;
+}
+
+.register-field label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.register-field input {
+  width: 100%;
+  min-height: 49px;
+  padding: 0 14px;
+  border: 1px solid #e8eaf2;
+  border-radius: 11px;
+  outline: none;
+  background: #fff;
+  color: #171a2b;
+  font: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-field input:focus {
+  border-color: #6558e8;
+  box-shadow: 0 0 0 3px rgba(101, 88, 232, 0.13);
+}
+
+.register-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 20px 0;
+  color: #70758a;
+  font-size: 13px;
+}
+
+.register-consent input {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: #6558e8;
+}
+
+.register-button {
+  width: 100%;
+  min-height: 50px;
+  border: 0;
+  border-radius: 12px;
+  background: #6558e8;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.register-button:hover {
+  transform: translateY(-1px);
+  background: #5144d2;
+}
+
+.register-error {
+  margin: 0 0 12px;
+  color: #c83232;
+  font-size: 14px;
+}
+
+.register-login {
+  margin: 22px 0 0;
+  color: #70758a;
+  font-size: 14px;
+  text-align: center;
+}
+
+.register-login a {
+  color: #6558e8;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-login a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+  .register-card {
+    padding: 28px 22px;
+  }
+
+  .register-card h1 {
+    font-size: 28px;
+  }
+}

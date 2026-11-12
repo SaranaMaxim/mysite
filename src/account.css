@@ -1,0 +1,410 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(232, 234, 242, 0.8);
+  background: rgba(247, 248, 252, 0.92);
+  backdrop-filter: blur(12px);
+}
+
+.nav-links a.active {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.profile-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.avatar {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 13px;
+  background: #f0efff;
+  color: var(--primary);
+}
+
+.dashboard-main {
+  padding-top: 48px;
+  padding-bottom: 55px;
+}
+
+.dashboard-welcome {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.dashboard-welcome h1 {
+  max-width: none;
+  margin: 0 0 10px;
+  font-size: clamp(34px, 5vw, 48px);
+  letter-spacing: -2px;
+}
+
+.dashboard-welcome h1 span {
+  color: inherit;
+}
+
+.dashboard-welcome p,
+.panel-heading p {
+  color: var(--muted);
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.dashboard-stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.dashboard-stat-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 15px;
+  background: #f0efff;
+  font-size: 22px;
+}
+
+.dashboard-stat:nth-child(2) .dashboard-stat-icon {
+  background: #e9f7d4;
+}
+
+.dashboard-stat:nth-child(3) .dashboard-stat-icon {
+  background: #fff1df;
+}
+
+.dashboard-stat strong,
+.dashboard-stat span:last-child {
+  display: block;
+}
+
+.dashboard-stat strong {
+  font-size: 21px;
+}
+
+.dashboard-stat div span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dashboard-panel {
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.panel-heading h2 {
+  margin-bottom: 4px;
+  font-size: 21px;
+  letter-spacing: -0.5px;
+}
+
+.panel-heading p {
+  font-size: 13px;
+}
+
+.text-link {
+  flex-shrink: 0;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.learning-card {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 17px;
+  background: #fcfcff;
+}
+
+.learning-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.learning-card .course-icon {
+  margin: 0;
+}
+
+.course-level {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f0efff;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.learning-card h3 {
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
+.learning-card > p {
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.progress-label strong {
+  color: var(--primary);
+}
+
+.progress-track {
+  height: 9px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e9eaf2;
+}
+
+.progress-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--primary);
+}
+
+.learning-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.learning-card-bottom .button {
+  min-height: 42px;
+  padding: 0 16px;
+  font-size: 13px;
+}
+
+.task-list {
+  display: grid;
+  gap: 4px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.task-item:last-child {
+  border-bottom: 0;
+}
+
+.task-marker {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 13px;
+  font-weight: 700;
+}
+
+.task-marker-purple {
+  background: #f0efff;
+  color: var(--primary);
+}
+
+.task-marker-green {
+  background: #e9f7d4;
+  color: #567b20;
+}
+
+.task-marker-orange {
+  background: #fff1df;
+  color: #b66b19;
+}
+
+.task-item h3 {
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.task-item p {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.task-date {
+  flex-shrink: 0;
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.dashboard-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 22px;
+  padding: 30px;
+  border-radius: 22px;
+  background: #1b1d2b;
+  color: #fff;
+}
+
+.dashboard-cta-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.dashboard-cta h2 {
+  max-width: 590px;
+  margin-bottom: 6px;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.2;
+}
+
+.dashboard-cta p {
+  color: #b9bbca;
+  font-size: 14px;
+}
+
+.dashboard-cta .button {
+  flex-shrink: 0;
+  background: var(--accent);
+  color: #1b1d2b;
+}
+
+.dashboard-cta .button:hover {
+  background: #d9ff8c;
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .dashboard-main {
+    padding-top: 32px;
+  }
+
+  .dashboard-welcome {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-welcome .button {
+    width: 100%;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .dashboard-panel {
+    padding: 18px;
+  }
+
+  .panel-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .learning-card {
+    padding: 16px;
+  }
+
+  .learning-card-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .learning-card-bottom .button {
+    width: 100%;
+  }
+
+  .task-item {
+    flex-wrap: wrap;
+  }
+
+  .task-date {
+    margin-left: 53px;
+  }
+
+  .dashboard-cta {
+    padding: 24px 20px;
+  }
+
+  .dashboard-cta .button {
+    width: 100%;
+  }
+
+  .profile-name {
+    display: none;
+  }
+}
